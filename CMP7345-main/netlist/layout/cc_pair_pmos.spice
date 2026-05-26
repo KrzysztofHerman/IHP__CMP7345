@@ -1,0 +1,16 @@
+** sch_path: /home/herman/github/IHP-GmbH/IP/IHP__CMP7345/CMP7345-main/schematic/xschem/cc_pair_pmos.sch
+.subckt cc_pair_pmos Id2 Id1 Is2 Is1 vdd vss
+*.PININFO vdd:B Id2:B Id1:B Is2:B Is1:B vss:B
+MMA1 Id1 Id2 Is1 nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMB1 Id2 Id1 Is2 nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMA2 Id1 Id2 Is1 nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMB2 Id2 Id1 Is2 nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMA3 Id1 Id2 Is1 nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMA4 Id1 Id2 Is1 nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMB3 Id2 Id1 Is2 nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMB4 Id2 Id1 Is2 nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMD1 vdd vdd vdd nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+MMD2 vdd vdd vdd nw sg13_lv_pmos w=1.0u l=0.26u ng=1 m=1
+DD1 vss nw dpantenna A=22.48p P=89.92u m=1
+RR1 vdd nw ntap1 A=18.2p P=72.8u
+.ends
