@@ -1,12 +1,12 @@
-# CMP7345
+# CMP7345 Strong ARM Comparator 
 
-Single-technology IP library.
+# Architecture 
 
-- doc/     : user documentation
-- dependencies/ : sub-cells and blocks
-- release/v.1.0.0 : immutable versioned deliveries
+The architecture is a typical one for a Strong ARM comparator shown on the figure below. 
 
-## Graphics
+![scham-basic](doc/fig/scham-basic.png)
+
+
 
 ### cc_pari_nmos
 
@@ -40,9 +40,7 @@ Single-technology IP library.
 
 ![process](doc/fig/process.png)
 
-### scham-basic
 
-![scham-basic](doc/fig/scham-basic.png)
 
 ### schem-final
 
