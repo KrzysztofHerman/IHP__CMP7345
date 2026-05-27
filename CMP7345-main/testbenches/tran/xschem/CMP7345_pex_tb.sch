@@ -194,7 +194,8 @@ C {launcher.sym} 1640 -450 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/tran.raw tran"
 }
-C {title-3.sym} 0 0 0 0 {name=l16 author="IHP-GmbH 2026" title="Strong ARM Latch transisnt simulation" rev=1.0 lock=true}
+C {title-3.sym} 0 0 0 0 {name=l16 author="IHP-GmbH 2026" title="Strong ARM Latch transient 
+post-layout simulation" rev=1.0 lock=true}
 C {lab_pin.sym} 785 -1335 3 0 {name=p4 sig_type=std_logic lab=vss}
 C {vsource.sym} 155 -1055 0 0 {name=VDD1 value="DC 0.0"}
 C {lab_pin.sym} 155 -1115 0 0 {name=p7 sig_type=std_logic lab=vss}
