@@ -1,0 +1,37 @@
+** sch_path: /home/herman/github/IHP-GmbH/IP/IHP__CMP7345/CMP7345-main/schematic/xschem/diff_pair.sch
+**.subckt diff_pair Id1 Id2 v+ v- vdd tail vss
+*.iopin v-
+*.iopin v+
+*.iopin vss
+*.iopin tail
+*.iopin Id2
+*.iopin Id1
+*.iopin vdd
+XMA1 Id2 v- tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA2 Id2 v- tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA3 Id2 v- tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA4 Id2 v- tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMB1 Id1 v+ tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMB2 Id1 v+ tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMB3 Id1 v+ tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMB4 Id1 v+ tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA5 Id2 v- tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA6 Id2 v- tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA7 Id2 v- tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA8 Id2 v- tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMB5 Id1 v+ tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMB6 Id1 v+ tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMB7 Id1 v+ tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMB8 Id1 v+ tail sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA9 vss vss Id2 sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA10 vss vss Id1 sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA11 vss vss Id1 sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA12 vss vss Id2 sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA13 Id2 vss vss sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA14 Id1 vss vss sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA15 Id1 vss vss sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XMA16 Id2 vss vss sub! sg13_lv_nmos w=1.0u l=0.26u ng=1 m=1 mm_ok=0
+XR1 sub! vss ptap1 R=196 w=1.0e-6 l=1.0e-6
+XD1 sub! vdd dantenna l=1.0u w=1.0u
+**.ends
+.end

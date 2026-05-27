@@ -1,0 +1,22 @@
+** sch_path: /home/herman/github/IHP-GmbH/IP/IHP__CMP7345/CMP7345-main/schematic/xschem/CMP7345-basic.sch
+**.subckt CMP7345-basic v- v+ vss vdd clk vout2 vout1
+*.iopin v-
+*.iopin v+
+*.iopin vss
+*.iopin vdd
+*.iopin clk
+*.iopin vout2
+*.iopin vout1
+XM2 Q v- net1 vss sg13_lv_nmos w=8.0u l=0.26u ng=1 m=1 mm_ok=1
+XM1 P v+ net1 vss sg13_lv_nmos w=8.0u l=0.26u ng=1 m=1 mm_ok=1
+XM5 vout1 vout2 vdd vdd sg13_lv_pmos w=4.0u l=0.26u ng=1 m=1 mm_ok=0
+XM3 vout1 vout2 P vss sg13_lv_nmos w=8.0u l=0.26u ng=1 m=1 mm_ok=1
+XM7 net1 clk vss vss sg13_lv_nmos w=6u l=0.13u ng=6 m=1 mm_ok=0
+XM4 vout2 vout1 Q vss sg13_lv_nmos w=8.0u l=0.26u ng=1 m=1 mm_ok=1
+XM6 vout2 vout1 vdd vdd sg13_lv_pmos w=4.0u l=0.26u ng=3 m=1 mm_ok=0
+XMS4 vout2 clk vdd vdd sg13_lv_pmos w=3.0u l=0.13u ng=3 m=1 mm_ok=0
+XMS1 P clk vdd vdd sg13_lv_pmos w=3.0u l=0.13u ng=3 m=1 mm_ok=0
+XMS2 Q clk vdd vdd sg13_lv_pmos w=3.0u l=0.13u ng=3 m=1 mm_ok=0
+XMS3 vout1 clk vdd vdd sg13_lv_pmos w=3.0u l=0.13u ng=3 m=1 mm_ok=0
+**.ends
+.end

@@ -1,0 +1,93 @@
+* NGSPICE file created from CMP7345.ext - technology: ihp-sg13g2
+
+.subckt CMP7345 vdd vout1 vout2 v- v+ clk vss 
+X0 Vout1 clk VDD VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X1 diff_pair_0.Id2 V- diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X2 Vout2 Vout1 diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X3 diff_pair_0.tail V- diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X4 diff_pair_0.Id1 clk VDD VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X5 diff_pair_0.Id2 clk VDD VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X6 diff_pair_0.Id2 VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X7 diff_pair_0.Id2 Vout1 Vout2 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X8 Vout2 Vout1 cc_pair_pmos_0.Is2 VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X9 Vout1 Vout2 VDD VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X10 diff_pair_0.tail V+ diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X11 diff_pair_0.Id2 V- diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X13 diff_pair_0.Id2 VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X14 diff_pair_0.Id1 Vout2 Vout1 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X15 diff_pair_0.Id2 VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X16 diff_pair_0.Id1 V+ diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X17 diff_pair_0.tail V+ diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X18 Vout1 Vout2 diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X19 diff_pair_0.tail clk VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X20 VDD clk Vout2 VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X21 VDD clk Vout1 VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X22 cc_pair_pmos_0.Is2 Vout1 Vout2 VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X23 VDD Vout2 Vout1 VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X24 diff_pair_0.tail V+ diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X26 VDD clk diff_pair_0.Id1 VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X27 VDD clk diff_pair_0.Id2 VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X28 diff_pair_0.Id1 V+ diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X29 diff_pair_0.Id1 V+ diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X30 VSS VSS diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X31 Vout2 Vout1 diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X32 diff_pair_0.Id2 Vout1 Vout2 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X33 VSS VSS diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X34 diff_pair_0.Id1 VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X35 Vout1 Vout2 VDD VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X36 diff_pair_0.Id2 Vout1 Vout2 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X37 diff_pair_0.tail V- diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X38 VSS clk diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X39 diff_pair_0.Id2 VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X40 Vout2 Vout1 diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X41 diff_pair_0.tail clk VSS VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X42 VDD clk Vout2 VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X43 VDD clk Vout1 VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X44 VDD VDD VDD VDD sg13_lv_pmos ad=0.34p pd=2.68u as=93.81305p ps=0.25846m w=1u l=0.26u
+X45 diff_pair_0.Id2 Vout1 Vout2 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X46 VSS VSS diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X47 diff_pair_0.Id2 V- diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X48 Vout1 Vout2 diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X49 VSS VSS diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X50 Vout2 Vout1 cc_pair_pmos_0.Is2 VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X51 Vout2 Vout1 diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X52 diff_pair_0.Id1 Vout2 Vout1 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X53 diff_pair_0.tail V+ diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X54 diff_pair_0.Id1 VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X55 cc_pair_pmos_0.Is2 Vout1 Vout2 VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X56 diff_pair_0.tail clk VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X57 VSS clk diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X58 Vout2 clk VDD VDD sg13_lv_pmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.13u
+X59 VSS VSS diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X60 VSS VSS diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X61 VDD Vout2 Vout1 VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X62 diff_pair_0.Id1 V+ diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X63 Vout1 Vout2 diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X64 diff_pair_0.Id1 Vout2 Vout1 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X65 VDD clk diff_pair_0.Id1 VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X66 VDD clk diff_pair_0.Id2 VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.13u
+X67 diff_pair_0.Id1 VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X68 VDD VDD VDD VDD sg13_lv_pmos ad=0.34p pd=2.68u as=0 ps=0 w=1u l=0.26u
+X69 diff_pair_0.Id1 Vout2 Vout1 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X70 diff_pair_0.tail V- diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X71 diff_pair_0.Id1 VSS VSS VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X72 Vout1 Vout2 diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.26u
+X73 VSS VDD dantenna l=13.44u w=8.44u
+X74 diff_pair_0.tail V- diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X75 VSS clk diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.34p ps=2.68u w=1u l=0.13u
+X76 diff_pair_0.Id2 V- diff_pair_0.tail VSS sg13_lv_nmos ad=0.19p pd=1.38u as=0.19p ps=1.38u w=1u l=0.26u
+X77 VSS VSS diff_pair_0.Id1 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+X78 VSS VSS diff_pair_0.Id2 VSS sg13_lv_nmos ad=0.34p pd=2.68u as=0.19p ps=1.38u w=1u l=0.26u
+C0 VDD Vout2 2.61492f
+C1 VDD Vout1 2.93981f
+C2 V+ V- 3.22345f
+C3 diff_pair_0.Id1 V- 2.31972f
+C4 diff_pair_0.Id1 Vout1 2.98943f
+C5 Vout1 Vout2 3.5177f
+C6 diff_pair_0.Id2 diff_pair_0.Id1 2.61706f
+C7 diff_pair_0.Id2 Vout2 2.85929f
+C8 V- VSS 2.42478f
+C9 V+ VSS 3.74055f
+C10 Vout1 VSS 2.32825f
+C11 VDD VSS 19.4106f
+.ends

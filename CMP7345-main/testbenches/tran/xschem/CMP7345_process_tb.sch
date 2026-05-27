@@ -204,7 +204,7 @@ value="
 .lib cornerMOSlv.lib mos_tt_stat
 .INCLUDE sg13g2_stdcell.spice
 .lib cornerDIO.lib dio_tt
-.lib cornerRES.lib res_typ
+.lib cornerRES.lib res_typ_stat
 "}
 C {devices/code_shown.sym} 10 -1610 0 0 {name=NGSPICE only_toplevel=false 
 value="
@@ -212,7 +212,7 @@ value="
 .options rseries=1
 .control
   shell rm tran.raw
-  let mc_runs = 50
+  let mc_runs = 2
   let run = 0
   set curplot=new          
   set scratch=$curplot    

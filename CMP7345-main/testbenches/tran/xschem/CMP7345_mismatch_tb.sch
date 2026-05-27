@@ -1,0 +1,255 @@
+v {xschem version=3.4.8RC file_version=1.3}
+G {}
+K {}
+V {}
+S {}
+F {}
+E {}
+B 2 1685 -1760 2485 -1360 {flags=graph
+y1=0.59
+y2=0.61
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.9846541e-08
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+x2=5.1767048e-08
+color="4 7"
+node="vp
+vm"
+sim_type=tran
+}
+B 2 1685 -1350 2485 -950 {flags=graph
+y1=-0.0069
+y2=1.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.9846541e-08
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+x2=5.1767048e-08
+color=8
+node=IsHigh
+sim_type=tran
+hilight_wave=-1
+rainbow=1
+digital=0}
+B 2 1685 -940 2485 -540 {flags=graph
+y1=-0.3
+y2=1.3
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.9846541e-08
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+x2=5.1767048e-08
+sim_type=tran
+color="6 4 4"
+node="IsLow
+clk
+\\"ddif;x1.p  x1.q -\\""
+hilight_wave=-1
+mode=Line
+rainbow=1
+}
+B 2 585 -975 1535 -195 {flags=graph
+y1=-0.043
+y2=1.5
+ypos1=0
+ypos2=2
+divy=5
+subdivy=1
+unity=1
+x1=4.9846541e-08
+
+divx=5
+subdivx=4
+xlabmag=1.0
+ylabmag=1.0
+
+
+dataset=-1
+unitx=1
+logx=0
+logy=0
+x2=5.1767048e-08
+sim_type=tran
+color="9 4 5 6 8"
+node="X1.p
+x1.q
+vout1
+vout2
+clk"
+hilight_wave=-1}
+N 55 -705 55 -675 {
+lab=vp}
+N 55 -835 55 -805 {
+lab=vdd}
+N 55 -745 55 -725 {
+lab=GND}
+N 910 -1540 910 -1520 {
+lab=vss}
+N 910 -1670 910 -1640 {
+lab=vdd}
+N 760 -1620 830 -1620 {
+lab=vp}
+N 760 -1560 830 -1560 {
+lab=vm}
+N 55 -725 155 -725 {lab=GND}
+N 155 -745 155 -725 {lab=GND}
+N 155 -835 155 -805 {lab=vss}
+N 1000 -1560 1130 -1560 {lab=vout2}
+N 1000 -1580 1000 -1560 {lab=vout2}
+N 980 -1580 1000 -1580 {lab=vout2}
+N 980 -1600 1000 -1600 {lab=vout1}
+N 1000 -1620 1130 -1620 {lab=vout1}
+N 1000 -1620 1000 -1600 {lab=vout1}
+N 55 -495 55 -465 {
+lab=clk}
+N 155 -705 155 -675 {
+lab=vm}
+N 105 -595 105 -585 {lab=#net1}
+N 55 -615 55 -595 {lab=#net1}
+N 155 -615 155 -595 {lab=#net1}
+N 760 -1590 830 -1590 {lab=clk}
+N 1265 -1460 1265 -1445 {lab=vss}
+N 1315 -1445 1315 -1435 {lab=vss}
+N 1265 -1445 1315 -1445 {lab=vss}
+N 1210 -1560 1265 -1560 {lab=IsLow}
+N 1355 -1620 1355 -1520 {lab=IsHigh}
+N 1355 -1620 1365 -1620 {lab=IsHigh}
+N 1265 -1560 1265 -1520 {lab=IsLow}
+N 1210 -1620 1355 -1620 {lab=IsHigh}
+N 1265 -1560 1365 -1560 {lab=IsLow}
+N 1355 -1460 1355 -1445 {lab=vss}
+N 1315 -1445 1355 -1445 {lab=vss}
+N 105 -595 155 -595 {lab=#net1}
+N 55 -595 105 -595 {lab=#net1}
+C {vsource.sym} 55 -775 0 0 {name=VDD value="DC 1.2"}
+C {lab_pin.sym} 910 -1670 1 0 {name=p1 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 55 -835 0 0 {name=p2 sig_type=std_logic lab=vdd}
+C {lab_pin.sym} 55 -705 0 0 {name=p3 sig_type=std_logic lab=vp}
+C {lab_pin.sym} 760 -1620 0 0 {name=p5 sig_type=std_logic lab=vp}
+C {lab_pin.sym} 760 -1560 0 0 {name=p6 sig_type=std_logic lab=vm}
+C {capa.sym} 1265 -1490 0 0 {name=Cload
+m=1
+value=50f
+footprint=1206
+device="ceramic capacitor"}
+C {devices/code_shown.sym} 10 -1730 0 0 {name=MODEL only_toplevel=false
+format="tcleval( @value )"
+value="
+.lib cornerMOSlv.lib mos_tt_mismatch
+.lib cornerRES.lib res_typ
+.lib cornerDIO.lib dio_tt
+.INCLUDE sg13g2_stdcell.spice
+"}
+C {devices/code_shown.sym} 10 -1610 0 0 {name=NGSPICE only_toplevel=false 
+value="
+.options cshunt=20f
+.options rseries=1
+.control
+shell rm tran.raw
+  let mc_runs = 2
+  let run = 0
+  set curplot=new          
+  set scratch=$curplot    
+  set appendwrite
+  let vh=unitvec(mc_runs)
+  let vl=unitvec(mc_runs)
+  let td=unitvec(mc_runs)
+  let teval=66n
+  let vtdly=unitvec(mc_runs)
+
+  dowhile run < mc_runs   
+    reset
+    tran 10p 120n
+    meas tran vh1 find v(vout1) at=73n
+    meas tran vl1 find v(vout2) at=73n
+    meas tran tdly TRIG v(clk) VAL=0.6 RISE=2 TARG v(vout2) VAL=0.6 FALL=2
+	    
+    set run = $&run   
+    set plt = $curplot          
+    setplot $scratch       
+    let vvd\{$run\} = \{$plt\}.v(vout1)
+    let vh[run]=\{$plt\}.vh1
+    let vl[run]=\{$plt\}.vl1
+    let vtdly[run]=\{$plt\}.tdly	    
+    setplot $plt
+    let run = run + 1
+    write tran.raw
+    end  
+let vdv=vp-vm
+meas tran vdiff find v(vdv) at=73n
+print \{$scratch\}.vtdly 
+.endc
+"}
+C {launcher.sym} 1740 -515 0 0 {name=h5
+descr="load waves" 
+tclcommand="xschem raw_read $netlist_dir/tran.raw tran"
+}
+C {title-3.sym} 0 0 0 0 {name=l16 author="IHP-GmbH 2026" title="Strong ARM Latch missmatch simulation" rev=1.0 lock=true}
+C {CMP7345.sym} 900 -1590 0 0 {name=x1}
+C {lab_pin.sym} 910 -1520 3 0 {name=p4 sig_type=std_logic lab=vss}
+C {vsource.sym} 155 -775 0 0 {name=VDD1 value="DC 0.0"}
+C {lab_pin.sym} 155 -835 0 0 {name=p7 sig_type=std_logic lab=vss}
+C {gnd.sym} 105 -725 0 0 {name=l2 lab=GND}
+C {capa.sym} 1355 -1490 0 0 {name=Cload1
+m=1
+value=50f
+footprint=1206
+device="ceramic capacitor"}
+C {lab_pin.sym} 1040 -1620 1 0 {name=p8 sig_type=std_logic lab=vout1}
+C {lab_pin.sym} 1040 -1560 3 0 {name=p9 sig_type=std_logic lab=vout2}
+C {lab_pin.sym} 760 -1590 0 0 {name=p11 sig_type=std_logic lab=clk}
+C {vsource.sym} 55 -435 0 0 {name=V2 value="PULSE( 0 1.2 0.0N 10P 10P 5N \{(5N)+(5N)+(10P)+(10P)\} )  AC 0"
+}
+C {gnd.sym} 55 -405 0 0 {name=l3 lab=GND
+value="PULSE( 0 1.2 17.5N 10P 10P 5N \{(5N)+(5N)+(10P)+(10P)\} )  AC 0"}
+C {lab_pin.sym} 55 -495 0 0 {name=p12 sig_type=std_logic lab=clk}
+C {vsource.sym} 55 -645 0 0 {name=V3 value=0}
+C {lab_pin.sym} 155 -705 0 0 {name=p13 sig_type=std_logic lab=vm}
+C {vsource.sym} 105 -555 0 0 {name=VDD2 value="DC 0.6"}
+C {gnd.sym} 105 -525 0 0 {name=l1 lab=GND}
+C {lab_pin.sym} 1365 -1560 2 0 {name=p17 sig_type=std_logic lab=IsLow}
+C {sg13g2_stdcells/sg13g2_inv_1.sym} 1170 -1620 0 0 {name=x5 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {sg13g2_stdcells/sg13g2_inv_1.sym} 1170 -1560 0 0 {name=x6 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {lab_pin.sym} 1365 -1620 2 0 {name=p20 sig_type=std_logic lab=IsHigh}
+C {lab_pin.sym} 1315 -1435 3 0 {name=p18 sig_type=std_logic lab=vss}
+C {vsource.sym} 155 -645 0 0 {name=V4 value="PWL(0 -10m 120n 10m)"}
