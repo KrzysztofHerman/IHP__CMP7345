@@ -7,8 +7,15 @@ The architecture is a typical one for a Strong ARM comparator shown on the figur
 ![scham-basic](doc/fig/scham-basic.png)
 
 
+# Mismatch compansation 
 
-### cc_pari_nmos
+In order to reduce the effect of mismatch a common centroid layout was applied for the differential pair M<sub>1,2</sub>,
+and cross-coupled pairs: M<sub>3,4</sub> and M<sub>5,6</sub>. The final architecture is shown on the next figure and it also contains 
+the precharge switches MS<sub>1-4</sub> and the tail switch M<sub>7</sub>.
+
+![layout-final](doc/fig/layout-final.png)
+
+
 
 ![cc_pari_nmos](doc/fig/cc_pari_nmos.png)
 
@@ -34,7 +41,6 @@ The architecture is a typical one for a Strong ARM comparator shown on the figur
 
 ### layout-final
 
-![layout-final](doc/fig/layout-final.png)
 
 ### process
 
