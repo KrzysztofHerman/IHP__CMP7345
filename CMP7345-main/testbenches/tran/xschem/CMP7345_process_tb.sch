@@ -7,13 +7,13 @@ F {}
 E {}
 B 2 1685 -1760 2485 -1360 {flags=graph
 y1=0.59
-y2=0.61
+y2=0.62
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.7345037e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -25,7 +25,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=3.4753185e-08
+x2=1.2e-07
 color="4 7"
 node="vp
 vm"
@@ -39,7 +39,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.7345037e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -51,7 +51,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=3.4753185e-08
+x2=1.2e-07
 color=8
 node=IsHigh
 sim_type=tran
@@ -66,7 +66,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.7345037e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -78,7 +78,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=3.4753185e-08
+x2=1.2e-07
 sim_type=tran
 color="6 4"
 node="IsLow
@@ -96,7 +96,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.7345037e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -108,7 +108,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=3.4753185e-08
+x2=1.2e-07
 sim_type=tran
 color="9 4"
 node="\\"outdiff; vout1 vout2 - abs()\\"
@@ -122,7 +122,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=2.7345037e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -134,7 +134,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=3.4753185e-08
+x2=1.2e-07
 sim_type=tran
 color="9 4 5 6 8"
 node="X1.p
@@ -238,7 +238,7 @@ C {sg13g2_stdcells/sg13g2_inv_1.sym} 1170 -1630 0 0 {name=x5 VDD=VDD VSS=VSS pre
 C {sg13g2_stdcells/sg13g2_inv_1.sym} 1170 -1570 0 0 {name=x6 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {lab_pin.sym} 1365 -1630 2 0 {name=p20 sig_type=std_logic lab=IsHigh}
 C {lab_pin.sym} 1315 -1445 3 0 {name=p18 sig_type=std_logic lab=vss}
-C {vsource.sym} 425 -145 0 0 {name=V4 value="PWL(0 10m 120n -10m)"}
+C {vsource.sym} 425 -145 0 0 {name=V4 value="PWL(0 3m 120n -3m)"}
 C {simulator_commands.sym} 10 -1580 0 0 {name=COMMANDS
 simulator=ngspice
 only_toplevel=false 

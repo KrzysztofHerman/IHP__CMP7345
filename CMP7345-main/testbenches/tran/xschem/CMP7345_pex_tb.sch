@@ -13,7 +13,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.1573589e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -25,21 +25,21 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=7.0749916e-08
+x2=1.2e-07
 color="4 7"
 node="vp
 vm"
 sim_type=tran
 }
 B 2 1580 -1310 2380 -910 {flags=graph
-y1=-0.0034
+y1=-0.0036
 y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.1573589e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -51,7 +51,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=7.0749916e-08
+x2=1.2e-07
 color="8 12"
 node="IsHigh
 IsLow"
@@ -66,7 +66,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.1573589e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -78,7 +78,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=7.0749916e-08
+x2=1.2e-07
 sim_type=tran
 color=1
 node="\\"ddif;x1.p  x1.q -\\""}
@@ -90,7 +90,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=5.1573589e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -102,7 +102,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=7.0749916e-08
+x2=1.2e-07
 sim_type=tran
 color="6 4 5 6 8"
 node="X1.p
@@ -112,6 +112,8 @@ vout2
 clk"
 hilight_wave=-1}
 P 4 1 1630 -1290 {}
+T {the netlist was manually edited in order to set the 
+port order and remove a pmos internal node} 40 -480 0 0 0.4 0.4 {}
 N 55 -970 55 -940 {
 lab=vp}
 N 55 -1115 55 -1085 {
@@ -222,7 +224,7 @@ C {sg13g2_stdcells/sg13g2_inv_1.sym} 1045 -1435 0 0 {name=x5 VDD=VDD VSS=VSS pre
 C {sg13g2_stdcells/sg13g2_inv_1.sym} 1045 -1375 0 0 {name=x6 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {lab_pin.sym} 1240 -1435 2 0 {name=p20 sig_type=std_logic lab=IsHigh}
 C {lab_pin.sym} 1190 -1250 3 0 {name=p18 sig_type=std_logic lab=vss}
-C {vsource.sym} 160 -905 0 0 {name=V4 value="PWL(0 100m 120n -100m)"}
+C {vsource.sym} 160 -905 0 0 {name=V4 value="PWL(0 20m 120n -20m)"}
 C {launcher.sym} 1640 -400 0 0 {name=h1
 descr="load waves PEX" 
 tclcommand="xschem raw_read $netlist_dir/tran-pex.raw tran"
