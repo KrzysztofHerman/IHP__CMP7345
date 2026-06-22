@@ -6,14 +6,14 @@ S {}
 F {}
 E {}
 B 2 1685 -1760 2485 -1360 {flags=graph
-y1=0.59
-y2=0.61
+y1=0.58
+y2=0.62
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.9846541e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -25,21 +25,21 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=5.1767048e-08
+x2=1.2e-07
 color="4 7"
 node="vp
 vm"
 sim_type=tran
 }
 B 2 1685 -1350 2485 -950 {flags=graph
-y1=-0.0069
+y1=-0.0044
 y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.9846541e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -51,7 +51,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=5.1767048e-08
+x2=1.2e-07
 color=8
 node=IsHigh
 sim_type=tran
@@ -59,14 +59,14 @@ hilight_wave=-1
 rainbow=1
 digital=0}
 B 2 1685 -940 2485 -540 {flags=graph
-y1=-0.3
+y1=-0.0044
 y2=1.3
 ypos1=0
 ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.9846541e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -78,12 +78,10 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=5.1767048e-08
+x2=1.2e-07
 sim_type=tran
-color="6 4 4"
-node="IsLow
-clk
-\\"ddif;x1.p  x1.q -\\""
+color=6
+node=IsLow
 hilight_wave=-1
 mode=Line
 rainbow=1
@@ -96,7 +94,7 @@ ypos2=2
 divy=5
 subdivy=1
 unity=1
-x1=4.9846541e-08
+x1=0
 
 divx=5
 subdivx=4
@@ -108,7 +106,7 @@ dataset=-1
 unitx=1
 logx=0
 logy=0
-x2=5.1767048e-08
+x2=1.2e-07
 sim_type=tran
 color="9 4 5 6 8"
 node="X1.p
@@ -186,7 +184,7 @@ value="
 .options rseries=1
 .control
 shell rm tran.raw
-  let mc_runs = 2
+  let mc_runs = 50
   let run = 0
   set curplot=new          
   set scratch=$curplot    
@@ -217,7 +215,7 @@ shell rm tran.raw
     end  
 let vdv=vp-vm
 meas tran vdiff find v(vdv) at=73n
-print \{$scratch\}.vtdly 
+wrdata vdiff.csv \{$scratch\}.vtdly 
 .endc
 "}
 C {launcher.sym} 1740 -515 0 0 {name=h5
@@ -252,4 +250,4 @@ C {sg13g2_stdcells/sg13g2_inv_1.sym} 1170 -1620 0 0 {name=x5 VDD=VDD VSS=VSS pre
 C {sg13g2_stdcells/sg13g2_inv_1.sym} 1170 -1560 0 0 {name=x6 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {lab_pin.sym} 1365 -1620 2 0 {name=p20 sig_type=std_logic lab=IsHigh}
 C {lab_pin.sym} 1315 -1435 3 0 {name=p18 sig_type=std_logic lab=vss}
-C {vsource.sym} 155 -645 0 0 {name=V4 value="PWL(0 -10m 120n 10m)"}
+C {vsource.sym} 155 -645 0 0 {name=V4 value="PWL(0 -20m 120n 20m)"}

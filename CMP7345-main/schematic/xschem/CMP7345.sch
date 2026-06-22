@@ -1,1 +1,1 @@
-CMP7345-final.sch
+CMP7345-basic.sch
