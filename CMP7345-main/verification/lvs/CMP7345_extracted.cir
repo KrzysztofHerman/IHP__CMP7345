@@ -1,0 +1,54 @@
+* Extracted by KLayout with SG13G2 LVS runset on : 13/10/2026 19:36
+
+.SUBCKT CMP7345 V+ V\x2d VDD VSS Vout1 Vout2 clk
+X$4 Vout1 VDD VDD \$13 VDD Vout2 VSS cc_pair_pmos
+X$88 \$1 VSS \$4 \$3 Vout1 Vout2 VDD cc_pair_nmos
+X$96 \$1 VSS V+ V\x2d \$9 VDD \$4 \$3 diff_pair
+M$1 \$9 clk VSS \$1 sg13_lv_nmos L=0.13u W=6u AS=1.29p AD=1.29p PS=9.58u
++ PD=9.58u rfmode=0
+M$7 Vout1 clk VDD \$13 sg13_lv_pmos L=0.13u W=3u AS=0.72p AD=0.72p PS=5.44u
++ PD=5.44u rfmode=0
+M$10 Vout2 clk VDD \$13 sg13_lv_pmos L=0.13u W=3u AS=0.72p AD=0.72p PS=5.44u
++ PD=5.44u rfmode=0
+M$13 \$3 clk VDD \$13 sg13_lv_pmos L=0.13u W=3u AS=0.72p AD=0.72p PS=5.44u
++ PD=5.44u rfmode=0
+M$16 \$4 clk VDD \$13 sg13_lv_pmos L=0.13u W=3u AS=0.72p AD=0.72p PS=5.44u
++ PD=5.44u rfmode=0
+.ENDS CMP7345
+
+.SUBCKT diff_pair \$1 VSS V+ V\x2d tail VDD Id1 Id2
+M$1 VSS VSS Id2 \$1 sg13_lv_nmos L=0.26u W=4u AS=1.06p AD=1.06p PS=8.12u
++ PD=8.12u rfmode=0
+M$2 Id2 V\x2d tail \$1 sg13_lv_nmos L=0.26u W=8u AS=1.52p AD=1.52p PS=11.04u
++ PD=11.04u rfmode=0
+M$3 tail V+ Id1 \$1 sg13_lv_nmos L=0.26u W=8u AS=1.52p AD=1.52p PS=11.04u
++ PD=11.04u rfmode=0
+M$7 VSS VSS Id1 \$1 sg13_lv_nmos L=0.26u W=4u AS=1.06p AD=1.06p PS=8.12u
++ PD=8.12u rfmode=0
+D$25 \$1 VDD dantenna A=20.88p P=83.52u m=1
+R$26 VSS \$1 ptap1 A=17.8p P=71.2u
+.ENDS diff_pair
+
+.SUBCKT cc_pair_pmos Id1 Is2 Is1 \$4 VDD Id2 VSS
+M$1 VDD VDD VDD \$4 sg13_lv_pmos L=0.26u W=2u AS=0.68p AD=0.68p PS=5.36u
++ PD=5.36u rfmode=0
+M$2 Is1 Id2 Id1 \$4 sg13_lv_pmos L=0.26u W=4u AS=1.06p AD=1.06p PS=8.12u
++ PD=8.12u rfmode=0
+M$4 Is2 Id1 Id2 \$4 sg13_lv_pmos L=0.26u W=4u AS=1.06p AD=1.06p PS=8.12u
++ PD=8.12u rfmode=0
+D$11 VSS \$4 dpantenna A=22.48p P=89.92u m=1
+R$12 VDD \$4 ntap1 A=18.2p P=72.8u
+.ENDS cc_pair_pmos
+
+.SUBCKT cc_pair_nmos \$1 VSS Is1 Is2 Id1 Id2 VDD
+M$1 Id1 Id2 Is1 \$1 sg13_lv_nmos L=0.26u W=8u AS=2.12p AD=2.12p PS=16.24u
++ PD=16.24u rfmode=0
+M$2 Is1 VSS VSS \$1 sg13_lv_nmos L=0.26u W=4u AS=1.06p AD=1.06p PS=8.12u
++ PD=8.12u rfmode=0
+M$3 Id2 Id1 Is2 \$1 sg13_lv_nmos L=0.26u W=8u AS=2.12p AD=2.12p PS=16.24u
++ PD=16.24u rfmode=0
+M$4 Is2 VSS VSS \$1 sg13_lv_nmos L=0.26u W=4u AS=1.06p AD=1.06p PS=8.12u
++ PD=8.12u rfmode=0
+R$25 VSS \$1 ptap1 A=16.45p P=65.8u
+D$26 \$1 VDD dantenna A=19.53p P=78.12u m=1
+.ENDS cc_pair_nmos

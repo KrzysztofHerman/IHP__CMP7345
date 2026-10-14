@@ -1,0 +1,6 @@
+*.raw
+lvs_run_*
+drc_run_*
+runs*
+simulations/
+backups*

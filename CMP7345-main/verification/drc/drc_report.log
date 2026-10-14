@@ -1,0 +1,7 @@
+13-Oct-2026 19:13:13 | INFO    | KLayout version detected: 0.30.11 (required >= 0.30.5)
+13-Oct-2026 19:13:13 | WARNING | KLayout binary version (0.30.11) differs from the imported klayout Python package version (0.30.5). Re-align with: pip install klayout==0.30.11
+13-Oct-2026 19:13:13 | INFO    | Using DRC JSON file: /home/herman/github/KrzysztofHerman/IHP-Open-PDK/ihp-sg13g2/libs.tech/klayout/python/sg13g2_pycell_lib/sg13g2_tech_mod.json
+13-Oct-2026 19:13:33 | INFO    | =====================================================================================
+13-Oct-2026 19:13:33 | INFO    | ✅ --- KLayout DRC Check Passed: No DRC violations detected in the layout. --- ✅
+13-Oct-2026 19:13:33 | INFO    | =====================================================================================
+13-Oct-2026 19:13:33 | INFO    | Total DRC Run time: 20.69 seconds (including execution, analysis, and reporting)
