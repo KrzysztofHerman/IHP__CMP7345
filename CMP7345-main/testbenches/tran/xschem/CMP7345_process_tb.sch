@@ -234,8 +234,8 @@ C {lab_pin.sym} 425 -205 0 0 {name=p13 sig_type=std_logic lab=vm}
 C {vsource.sym} 375 -55 0 0 {name=VDD2 value="DC 0.6"}
 C {gnd.sym} 375 -25 0 0 {name=l1 lab=GND}
 C {lab_pin.sym} 1365 -1570 2 0 {name=p17 sig_type=std_logic lab=IsLow}
-C {sg13g2_stdcells/sg13g2_inv_1.sym} 1170 -1630 0 0 {name=x5 VDD=VDD VSS=VSS prefix=sg13g2_ }
-C {sg13g2_stdcells/sg13g2_inv_1.sym} 1170 -1570 0 0 {name=x6 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {sg13g2_inv_1.sym} 1170 -1630 0 0 {name=x5 VDD=VDD VSS=VSS prefix=sg13g2_ }
+C {sg13g2_inv_1.sym} 1170 -1570 0 0 {name=x6 VDD=VDD VSS=VSS prefix=sg13g2_ }
 C {lab_pin.sym} 1365 -1630 2 0 {name=p20 sig_type=std_logic lab=IsHigh}
 C {lab_pin.sym} 1315 -1445 3 0 {name=p18 sig_type=std_logic lab=vss}
 C {vsource.sym} 425 -145 0 0 {name=V4 value="PWL(0 3m 120n -3m)"}
